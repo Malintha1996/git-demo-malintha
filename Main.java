@@ -17,12 +17,19 @@ public class Main {
        if ("+".equals(operation)) {
            answer = add(a, b);
            System.out.println("Answer is: " + answer);
-       } else {
+       }else if ("*".equals(operation)) {
+           answer = mul(a, b);
+           System.out.println("Answer is: " + answer);
+       }else {
            System.out.println("Unsupported operation");
        }
    }
 
    private static int add(int a, int b) {
        return a + b;
+   }
+
+   private static int mul(int a, int b) {
+       return a * b;
    }
 }
